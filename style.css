@@ -79,8 +79,8 @@ input:focus {
 .meal {
   cursor: pointer;
   position: relative;
-  height: 180px;
-  width: 180px;
+  height: 160px;
+  width: 160px;
 }
 
 .meal-info {
@@ -143,12 +143,51 @@ input:focus {
   margin: 2px 5px 5px 2px;
 }
 
-@media(max-width: 800px) {}
+@media(max-width: 800px) {
+  .meals {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-@media(max-width: 700px) {}
+  .single-meal {
+    width: 600px;
+  }
+}
+
+@media(max-width: 700px) {
+  .meals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meal {
+    height: 200px;
+    width: 200px;
+  }
+
+  .single-meal {
+    width: 400px;
+  }
+}
 
 @media(max-width: 500px) {
   input[type='text'] {
     width: 220px;
+  }
+
+  .meals {
+    grid-template-columns: 1fr;
+  }
+
+  .meal {
+    height: 250px;
+    width: 250px;
+  }
+
+  .single-meal {
+    width: 300px;
+  }
+
+  .single-meal img {
+    height: 250px;
+    width: 250px;
   }
 }
