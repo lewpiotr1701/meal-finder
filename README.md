@@ -1,6 +1,7 @@
 ## Meal Finder App
 
-Simple meal finder app. Search and generate random meals from the [themealdb.com](https://www.themealdb.com) API
+Simple meal finder app.
+Search and generate random meals from the [themealdb.com](https://www.themealdb.com) API
 
 ## Project Specifications
 
